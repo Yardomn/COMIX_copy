@@ -1,0 +1,1047 @@
+--SORT COMMAND-- *Must Be From SearchResults Page
+sort-type publication
+sort-type default
+
+--ADD COMMAND--
+add
+
+--ADD CUSTOM--
+add-custom [lots of things]
+
+--REMOVE COMMAND--
+remove
+
+Add/Remove must be from comic page. Add custom must be from PC 
+
+--GRADE COMMAND-- Must Be From EditPage
+grade {rating}
+
+--SLAB COMMAND-- Must Be From EditPage
+slab
+
+--EDIT COMMAND-- Must be from EditPage
+edit {fieldType} {newField}
+
+--BROWSE COMMAND--
+browse {"personal collection", "database", or index of collection}
+--SCROLL COMMAND--
+scroll {"up", or "down}
+
+--QUIT COMMAND--
+quit
+
+--BACK COMMAND--
+back
+
+--SEARCH COMMAND--
+search <input>
+
+--SEARCHTYPE COMMAND--
+search-type <partial/exact/run/issue/gap/markedUp>
+
+--login/signup--
+login <username> <password>
+signup <username> <password>
+
+
+--test runs/gaps--
+
+browse 1
+add
+browse db
+browse 2
+add
+browse db
+browse 3
+add
+browse db
+browse 4
+add
+browse db
+browse 5
+add
+browse db
+browse 6
+add
+browse db
+browse 7
+add
+browse db
+browse 8
+add
+browse db
+browse 9
+add
+browse db
+browse 10
+add
+browse db
+browse 11
+add
+browse db
+browse 12
+add
+browse db
+browse 13
+add
+browse db
+browse 14
+add
+browse db
+browse 15
+add
+browse db
+browse 16
+add
+browse db
+browse 17
+add
+browse db
+browse 18
+add
+browse db
+browse 19
+add
+browse db
+browse 20
+add
+browse db
+browse 21
+add
+browse db
+browse 22
+add
+browse db
+browse 23
+add
+browse db
+browse 24
+add
+browse db
+browse 25
+add
+browse db
+browse 26
+add
+browse db
+browse 27
+add
+browse db
+browse 28
+add
+browse db
+browse 29
+add
+browse db
+browse 30
+add
+browse db
+browse 31
+add
+browse db
+browse 32
+add
+browse db
+browse 33
+add
+browse db
+browse 34
+add
+browse db
+browse 35
+add
+browse db
+browse 36
+add
+browse db
+browse 37
+add
+browse db
+browse 38
+add
+browse db
+browse 39
+add
+browse db
+browse 40
+add
+browse db
+browse 41
+add
+browse db
+browse 42
+add
+browse db
+browse 43
+add
+browse db
+browse 44
+add
+browse db
+browse 45
+add
+browse db
+browse 46
+add
+browse db
+browse 47
+add
+browse db
+browse 48
+add
+browse db
+browse 49
+add
+browse db
+browse 50
+add
+browse db
+browse 51
+add
+browse db
+browse 52
+add
+browse db
+browse 53
+add
+browse db
+browse 54
+add
+browse db
+browse 55
+add
+browse db
+browse 56
+add
+browse db
+browse 57
+add
+browse db
+browse 58
+add
+browse db
+browse 59
+add
+browse db
+browse 60
+add
+browse db
+browse 61
+add
+browse db
+browse 62
+add
+browse db
+browse 63
+add
+browse db
+browse 64
+add
+browse db
+browse 65
+add
+browse db
+browse 66
+add
+browse db
+browse 67
+add
+browse db
+browse 68
+add
+browse db
+browse 69
+add
+browse db
+browse 70
+add
+browse db
+browse 71
+add
+browse db
+browse 72
+add
+browse db
+browse 73
+add
+browse db
+browse 74
+add
+browse db
+browse 75
+add
+browse db
+browse 76
+add
+browse db
+browse 77
+add
+browse db
+browse 78
+add
+browse db
+browse 79
+add
+browse db
+browse 80
+add
+browse db
+browse 81
+add
+browse db
+browse 82
+add
+browse db
+browse 83
+add
+browse db
+browse 84
+add
+browse db
+browse 85
+add
+browse db
+browse 86
+add
+browse db
+browse 87
+add
+browse db
+browse 88
+add
+browse db
+browse 89
+add
+browse db
+browse 90
+add
+browse db
+browse 91
+add
+browse db
+browse 92
+add
+browse db
+browse 93
+add
+browse db
+browse 94
+add
+browse db
+browse 95
+add
+browse db
+browse 96
+add
+browse db
+browse 97
+add
+browse db
+browse 98
+add
+browse db
+browse 99
+add
+browse db
+browse 100
+add
+browse db
+browse 101
+add
+browse db
+browse 102
+add
+browse db
+browse 103
+add
+browse db
+browse 104
+add
+browse db
+browse 105
+add
+browse db
+browse 106
+add
+browse db
+browse 107
+add
+browse db
+browse 108
+add
+browse db
+browse 109
+add
+browse db
+browse 110
+add
+browse db
+browse 111
+add
+browse db
+browse 112
+add
+browse db
+browse 113
+add
+browse db
+browse 114
+add
+browse db
+browse 115
+add
+browse db
+browse 116
+add
+browse db
+browse 117
+add
+browse db
+browse 118
+add
+browse db
+browse 119
+add
+browse db
+browse 120
+add
+browse db
+browse 121
+add
+browse db
+browse 122
+add
+browse db
+browse 123
+add
+browse db
+browse 124
+add
+browse db
+browse 125
+add
+browse db
+browse 126
+add
+browse db
+browse 127
+add
+browse db
+browse 128
+add
+browse db
+browse 129
+add
+browse db
+browse 130
+add
+browse db
+browse 131
+add
+browse db
+browse 132
+add
+browse db
+browse 133
+add
+browse db
+browse 134
+add
+browse db
+browse 135
+add
+browse db
+browse 136
+add
+browse db
+browse 137
+add
+browse db
+browse 138
+add
+browse db
+browse 139
+add
+browse db
+browse 140
+add
+browse db
+browse 141
+add
+browse db
+browse 142
+add
+browse db
+browse 143
+add
+browse db
+browse 144
+add
+browse db
+browse 145
+add
+browse db
+browse 146
+add
+browse db
+browse 147
+add
+browse db
+browse 148
+add
+browse db
+browse 149
+add
+browse db
+browse 150
+add
+browse db
+browse 151
+add
+browse db
+browse 152
+add
+browse db
+browse 153
+add
+browse db
+browse 154
+add
+browse db
+browse 155
+add
+browse db
+browse 156
+add
+browse db
+browse 157
+add
+browse db
+browse 158
+add
+browse db
+browse 159
+add
+browse db
+browse 160
+add
+browse db
+browse 161
+add
+browse db
+browse 162
+add
+browse db
+browse 163
+add
+browse db
+browse 164
+add
+browse db
+browse 165
+add
+browse db
+browse 166
+add
+browse db
+browse 167
+add
+browse db
+browse 168
+add
+browse db
+browse 169
+add
+browse db
+browse 170
+add
+browse db
+browse 171
+add
+browse db
+browse 172
+add
+browse db
+browse 173
+add
+browse db
+browse 174
+add
+browse db
+browse 175
+add
+browse db
+browse 176
+add
+browse db
+browse 177
+add
+browse db
+browse 178
+add
+browse db
+browse 179
+add
+browse db
+browse 180
+add
+browse db
+browse 181
+add
+browse db
+browse 182
+add
+browse db
+browse 183
+add
+browse db
+browse 184
+add
+browse db
+browse 185
+add
+browse db
+browse 186
+add
+browse db
+browse 187
+add
+browse db
+browse 188
+add
+browse db
+browse 189
+add
+browse db
+browse 190
+add
+browse db
+browse 191
+add
+browse db
+browse 192
+add
+browse db
+browse 193
+add
+browse db
+browse 194
+add
+browse db
+browse 195
+add
+browse db
+browse 196
+add
+browse db
+browse 197
+add
+browse db
+browse 198
+add
+browse db
+browse 199
+add
+browse db
+browse 200
+add
+browse db
+browse 201
+add
+browse db
+browse 202
+add
+browse db
+browse 203
+add
+browse db
+browse 204
+add
+browse db
+browse 205
+add
+browse db
+browse 206
+add
+browse db
+browse 207
+add
+browse db
+browse 208
+add
+browse db
+browse 209
+add
+browse db
+browse 210
+add
+browse db
+browse 211
+add
+browse db
+browse 212
+add
+browse db
+browse 213
+add
+browse db
+browse 214
+add
+browse db
+browse 215
+add
+browse db
+browse 216
+add
+browse db
+browse 217
+add
+browse db
+browse 218
+add
+browse db
+browse 219
+add
+browse db
+browse 220
+add
+browse db
+browse 221
+add
+browse db
+browse 222
+add
+browse db
+browse 223
+add
+browse db
+browse 224
+add
+browse db
+browse 225
+add
+browse db
+browse 226
+add
+browse db
+browse 227
+add
+browse db
+browse 228
+add
+browse db
+browse 229
+add
+browse db
+browse 230
+add
+browse db
+browse 231
+add
+browse db
+browse 232
+add
+browse db
+browse 233
+add
+browse db
+browse 234
+add
+browse db
+browse 235
+add
+browse db
+browse 236
+add
+browse db
+browse 237
+add
+browse db
+browse 238
+add
+browse db
+browse 239
+add
+browse db
+browse 240
+add
+browse db
+browse 241
+add
+browse db
+browse 242
+add
+browse db
+browse 243
+add
+browse db
+browse 244
+add
+browse db
+browse 245
+add
+browse db
+browse 246
+add
+browse db
+browse 247
+add
+browse db
+browse 248
+add
+browse db
+browse 249
+add
+browse db
+browse 250
+add
+browse db
+browse 251
+add
+browse db
+browse 252
+add
+browse db
+browse 253
+add
+browse db
+browse 254
+add
+browse db
+browse 255
+add
+browse db
+browse 256
+add
+browse db
+browse 257
+add
+browse db
+browse 258
+add
+browse db
+browse 259
+add
+browse db
+browse 260
+add
+browse db
+browse 261
+add
+browse db
+browse 262
+add
+browse db
+browse 263
+add
+browse db
+browse 264
+add
+browse db
+browse 265
+add
+browse db
+browse 266
+add
+browse db
+browse 267
+add
+browse db
+browse 268
+add
+browse db
+browse 269
+add
+browse db
+browse 270
+add
+browse db
+browse 271
+add
+browse db
+browse 272
+add
+browse db
+browse 273
+add
+browse db
+browse 274
+add
+browse db
+browse 275
+add
+browse db
+browse 276
+add
+browse db
+browse 277
+add
+browse db
+browse 278
+add
+browse db
+browse 279
+add
+browse db
+browse 280
+add
+browse db
+browse 281
+add
+browse db
+browse 282
+add
+browse db
+browse 283
+add
+browse db
+browse 284
+add
+browse db
+browse 285
+add
+browse db
+browse 286
+add
+browse db
+browse 287
+add
+browse db
+browse 288
+add
+browse db
+browse 289
+add
+browse db
+browse 290
+add
+browse db
+browse 291
+add
+browse db
+browse 292
+add
+browse db
+browse 293
+add
+browse db
+browse 294
+add
+browse db
+browse 295
+add
+browse db
+browse 296
+add
+browse db
+browse 297
+add
+browse db
+browse 298
+add
+browse db
+browse 299
+add
+browse db
+browse 300
+add
+browse db
+browse 301
+add
+browse db
+browse 302
+add
+browse db
+browse 303
+add
+browse db
+browse 304
+add
+browse db
+browse 305
+add
+browse db
+browse 306
+add
+browse db
+browse 307
+add
+browse db
+browse 308
+add
+browse db
+browse 309
+add
+browse db
+browse 310
+add
+browse db
+browse 311
+add
+browse db
+browse 312
+add
+browse db
+browse 313
+add
+browse db
+browse 314
+add
+browse db
+browse 315
+add
+browse db
+browse 316
+add
+browse db
+browse 317
+add
+browse db
+browse 318
+add
+browse db
+browse 319
+add
+browse db
+browse 320
+add
+browse db
+browse 321
+add
+browse db
+browse 322
+add
+browse db
+browse 323
+add
+browse db
+browse 324
+add
+browse db
+browse 325
+add
+browse db
+browse 326
+add
+browse db
+browse 327
+add
+browse db
+browse 328
+add
+browse db
+browse 329
+add
+browse db
+browse 330
+add
+browse db
+browse 331
+add
+browse db
+browse 332
+add
+browse db
+browse 333
+add
+browse db
