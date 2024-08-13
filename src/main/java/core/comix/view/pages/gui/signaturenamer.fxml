@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.comix.view.pages.gui.ComicPageController">
+   <children>
+      <TextField fx:id="signatureNamer" layoutX="34.0" layoutY="75.0" prefHeight="25.0" prefWidth="233.0" />
+      <Label layoutX="51.0" layoutY="14.0" text="Enter Signature Name:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="signButton" layoutX="87.0" layoutY="127.0" mnemonicParsing="false" onAction="#cancelPopupHandle" style="-fx-background-color: #ff7070; -fx-border-color: black; -fx-border-radius: 2px;" text="Cancel" />
+      <Button fx:id="signButton1" layoutX="164.0" layoutY="127.0" mnemonicParsing="false" onAction="#signPopupHandle" style="-fx-background-color: #faff70; -fx-border-color: black; -fx-border-radius: 2px;" text="Enter" />
+   </children>
+</Pane>

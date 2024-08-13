@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.comix.view.pages.gui.ComicPageController">
+   <children>
+      <Text fx:id="userText" layoutX="232.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signed in as GUEST USER" textAlignment="RIGHT" wrappingWidth="358.492431640625" />
+      <GridPane alignment="CENTER" layoutX="70.0" layoutY="92.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="516.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.8000244140625" minWidth="10.0" prefWidth="185.66668701171875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.1999877929687" minWidth="10.0" prefWidth="306.99997965494794" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="0.0" prefWidth="34.199951171875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher:" wrappingWidth="247.73670196533203" GridPane.rowIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Series Name:" wrappingWidth="162.13678741455078" GridPane.rowIndex="2">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Volume Number:" wrappingWidth="243.73670196533203" GridPane.rowIndex="3">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Number:" wrappingWidth="251.73676300048828" GridPane.rowIndex="4">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Principle Characters: " wrappingWidth="253.33673858642578" GridPane.rowIndex="5">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Creators: " wrappingWidth="250.13672637939453" GridPane.rowIndex="6">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="250.93677520751953" GridPane.rowIndex="7">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Grade: " wrappingWidth="249.33673858642578" GridPane.rowIndex="8">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Slabbed:" wrappingWidth="247.73676300048828" GridPane.rowIndex="9">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Original Value: " wrappingWidth="246.13672637939453" GridPane.rowIndex="12">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Calculated Value:" wrappingWidth="247.73676300048828" GridPane.rowIndex="13">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="editIssueButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editIssueHandle" prefHeight="23.0" prefWidth="42.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/saveicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="issueNum" text="IssueNum" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="principleCharacters" text="PrincipleCharacters" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="creators" text="Creators" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="description" text="Description" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="grade" text="Grade" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Text fx:id="calculatedValue" strokeType="OUTSIDE" strokeWidth="0.0" text="CurrentValue" wrappingWidth="87.73669290542603" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Text fx:id="publisherName" strokeType="OUTSIDE" strokeWidth="0.0" text="PublisherName" wrappingWidth="318.9367256164551" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text fx:id="seriesName" strokeType="OUTSIDE" strokeWidth="0.0" text="SeriesName" wrappingWidth="322.1366767883301" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text fx:id="volumeNum" strokeType="OUTSIDE" strokeWidth="0.0" text="VolNum" wrappingWidth="319.7366523742676" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="editCharactersButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editCharactersHandle" prefHeight="23.0" prefWidth="42.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/saveicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="editCreatorButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editCreatorHandle" prefHeight="21.0" prefWidth="42.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/saveicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="editDescriptionButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editDescriptionHandle" prefHeight="23.0" prefWidth="42.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/saveicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="gradeButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gradeHandle" prefHeight="22.0" prefWidth="42.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/saveicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="slabButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#slabHandle" prefHeight="22.0" prefWidth="42.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/slabicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="originalValue" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Button fx:id="confirmSignature" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#valueHandle" prefHeight="22.0" prefWidth="42.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="12">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/saveicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Signatures: " wrappingWidth="170.93677520751953" GridPane.rowIndex="10">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="unauthenticatedSignatures" onMouseClicked="#viewUnAuthenticatedSignaturesHandle" strokeType="OUTSIDE" strokeWidth="0.0" text="View Signatures" wrappingWidth="302.1367378234863" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Button fx:id="signButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signHandle" prefHeight="23.0" prefWidth="42.0" text="Sign" GridPane.columnIndex="2" GridPane.rowIndex="10">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" translateX="2.0">
+                     <image>
+                        <Image url="@icons/signicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Authenticated Signatures:" wrappingWidth="172.53675079345703" GridPane.rowIndex="11">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="authenticateSignatures" onMouseClicked="#viewAuthenticatedSignaturesHandle" strokeType="OUTSIDE" strokeWidth="0.0" text="View Authenticated Signatures" wrappingWidth="302.9366035461426" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Button fx:id="authenticateButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#authenticateSignatureHandle" prefHeight="22.0" prefWidth="42.0" GridPane.columnIndex="2" GridPane.rowIndex="11">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/authicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fx:id="slabbed" onMouseClicked="#viewUnAuthenticatedSignaturesHandle" strokeType="OUTSIDE" strokeWidth="0.0" text="Slabbed" wrappingWidth="302.1367378234863" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="7.0" layoutY="109.0" prefHeight="266.0" prefWidth="47.2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="backButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="undoButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#undoHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Undo" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/undoicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="redoButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#redoHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Redo" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/redoicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="addButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Add" GridPane.rowIndex="8">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/addicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="removeButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#removeHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Remove" GridPane.rowIndex="9">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/removeicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </GridPane>
+      <ToolBar layoutX="8.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="592.0">
+         <items>
+            <Button fx:id="fullCollectionButton" mnemonicParsing="false" onAction="#fullCollectionHandle" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #70ff9b; -fx-border-color: black;" text="Full Collection" textAlignment="CENTER" />
+            <Button fx:id="personalCollectionButton" alignment="CENTER" mnemonicParsing="false" onAction="#personalCollectionHandle" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #709bff; -fx-border-color: black;" text="Personal Collection" textAlignment="CENTER" />
+            <Button fx:id="importButton" alignment="CENTER" mnemonicParsing="false" onAction="#importHandle" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #a8a8a8; -fx-border-color: black;" text="Import" textAlignment="CENTER" />
+            <Button fx:id="exportButton" alignment="CENTER" mnemonicParsing="false" onAction="#exportHandle" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #a8a8a8; -fx-border-color: black;" text="Export" textAlignment="CENTER" />
+            <Button fx:id="logoutButton" alignment="CENTER" mnemonicParsing="false" onAction="#logoutHandle" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #ff7070; -fx-border-color: black;" text="Log Out" textAlignment="CENTER" />
+         </items>
+      </ToolBar>
+      <Label fx:id="storyTitle" alignment="CENTER" layoutX="8.0" layoutY="57.0" prefHeight="27.0" prefWidth="584.0" text="Comic Name">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

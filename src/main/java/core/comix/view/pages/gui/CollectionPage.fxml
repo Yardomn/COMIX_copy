@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.comix.view.pages.gui.CollectionPageController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="8.0" layoutY="54.0" prefHeight="32.0" prefWidth="592.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="416.79998779296875" minWidth="10.0" prefWidth="416.79998779296875" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="175.99997558593748" minWidth="0.0" prefWidth="75.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="75.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="searchText" prefHeight="26.0" prefWidth="389.0" />
+            <Button fx:id="filterButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#filterHandle" prefHeight="28.0" prefWidth="54.0" style="-fx-background-color: #709bff; -fx-border-color: black;" text="Filter" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/searchfiltericon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="settingsButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#settingsHandle" prefHeight="28.0" prefWidth="54.0" style="-fx-background-color: #70ff9b; -fx-border-color: black;" text="Settings" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/sorticon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="searchButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#searchHandle" prefHeight="28.0" prefWidth="54.0" style="-fx-background-color: #ff7070; -fx-border-color: black;" text="Search" GridPane.columnIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/searchicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </GridPane>
+      <Text fx:id="guestText" layoutX="232.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signed in as GUEST USER" textAlignment="RIGHT" wrappingWidth="358.49232482910156" />
+      <Text fx:id="itemNumber" layoutX="396.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items 1-10 of 100" textAlignment="RIGHT" wrappingWidth="189.82571411132812" />
+      <GridPane fx:id="currentLevelPane" layoutX="7.0" layoutY="109.0" prefHeight="266.0" prefWidth="584.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.20001220703125" minWidth="10.0" prefWidth="47.20001220703125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="536.7999877929688" minWidth="10.0" prefWidth="536.7999877929688" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="backButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="upButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#upHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Up" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/upicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="downButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#downHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Down" GridPane.rowIndex="9">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@icons/upicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="addButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="New" GridPane.rowIndex="8">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/createicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="redoButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#redoHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Redo" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/redoicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="undoButton" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#undoHandle" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Undo" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/undoicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 1" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 6" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 7" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 8" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 9" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="541.0" style="-fx-background-color: #ddd; -fx-background-radius: 3px; -fx-border-color: #666; -fx-border-radius: 1px;" text="Comic 10" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <padding>
+                  <Insets bottom="2.0" left="10.0" top="2.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <ToolBar layoutX="8.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="592.0">
+         <items>
+            <Button fx:id="fullCollectionButton" mnemonicParsing="false" onAction="#fullCollectionHandle" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #70ff9b; -fx-border-color: black;" text="Full Collection" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="personalCollectionButton" alignment="CENTER" mnemonicParsing="false" onAction="#personalCollectionHandle" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #709bff; -fx-border-color: black;" text="Personal Collection" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="importButton" alignment="CENTER" mnemonicParsing="false" onAction="#importHandle" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Import" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="exportButton" alignment="CENTER" mnemonicParsing="false" onAction="#exportHandle" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #faff70; -fx-border-color: black;" text="Export" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="logoutButton" alignment="CENTER" mnemonicParsing="false" onAction="#logoutHandle" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #ff7070; -fx-border-color: black;" text="Log In" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </items>
+      </ToolBar>
+      <Label fx:id="browsingText" layoutX="14.0" layoutY="86.0" prefHeight="17.0" prefWidth="420.0" text="Browsing Full Collection" textOverrun="LEADING_ELLIPSIS" />
+   </children>
+</Pane>
